@@ -23,9 +23,11 @@
     display: block;
     justify-content: center;
     align-items: center;
+   
  
      /* Defina a altura da div container */
 }
+
 .rectangular-box {
     display: flex;
     justify-content: center;
@@ -37,7 +39,7 @@
     margin-right: 15px; /* Adiciona espaçamento entre os itens */
   }
   body {
-    margin: 10%;
+    
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
@@ -74,7 +76,8 @@ font-size: 15px;
 Color: #64ffda;
 letter-spacing: -1px;
 text-decoration: none;
-word-spacing: 12px;
+word-spacing: 9px;
+margin-top: 30px !important;
 
 }
 .texto2{
@@ -94,6 +97,13 @@ letter-spacing: 0px;
   letter-spacing: -1px;
   text-decoration: none;
   word-spacing: 8px;
+}
+
+.sobre{
+  /* Color: white; */
+  Color: white;
+  font-weight: 900;
+  letter-spacing: 0px;
 
 }
 
@@ -171,10 +181,50 @@ html {
     scroll-behavior: smooth;
 }
 
-.circle-image img{
-  width: 300px; 
-  height:300px; 
+/* Adicione isso ao seu arquivo CSS */
+
+/* Adicione isso ao seu arquivo CSS */
+
+.circle-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 50%;
-  margin-top: 30px;
-  margin-right: 120px;
+}
+
+.img-sobre img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: rotate(45deg) translateY(0);
+  }
+  40% {
+      transform: rotate(45deg) translateY(-10px);
+  }
+  60% {
+      transform: rotate(45deg) translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .texto2, .texto3, .texto4 {
+      font-size: 1.2rem;
+  }
+
+  .texto4 {
+      font-size: 1rem;
+  }
+
+  .botao {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+  }
+}
+
+.bloco{
+  margin-top: 200px !important;
 }

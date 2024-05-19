@@ -1,40 +1,51 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class=" text-start mt-5">
+<div class=" container text-start mt-5 bloco">
     <div class="row">
-        <div class="col-md-6 ">
+        <div class="col-lg-6 col-md-12 mb-4">
             <div>
                 <p class="text-small texto1">Olá, meu nome é</p>
                 <h1>
                     <p class="text-large texto2">Paulo Victor.</p>
                 </h1>
-                <h1><p class=" text-large texto3">Desenvolvo aplicativos e estudo Análise de Dados.</p></h1>
+                <h1>
+                    <p class="text-large texto3">Desenvolvo aplicativos e estudo Análise de Dados.</p>
+                </h1>
                 <p class="text-medium texto4">Sou desenvolvedor de software focado em back-end (e ocasionalmente
                     desenvolvimento
-                    aplicações web). Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL
+                    aplicações web). <br> Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL
                     Relacional
-                    e
-                    Powerbi.
-                   </p>
-
+                    e Powerbi.
+                </p>
             </div>
             <div>
                 <a href="#" class="btn btn-primary btn-custom botao">Confira meus projetos</a>
             </div>
-            
         </div>
 
-
         <!-- Bloco com imagem arredondada -->
-
-        <div class="col-md-6">
-            <div class="circle-image d-block text-center">
-                <img src="{{url_for('static',filename='Eu_3.png')}}" alt="Imagem"
-                    >
+        <div class="col-lg-6 col-md-12 text-center">
+            <div class="circle-image">
+                <img src="{{url_for('static',filename='Eu_3.png')}}" alt="Imagem" class="img-fluid rounded-circle">
             </div>
         </div>
     </div>
+</div>
 
+<div class=" container text-start mt-5 bloco">
+    <div class="row img-sobre">
+        <div class="col-4"><img src="{{url_for('static',filename='Eu2.png')}}" alt="Imagem" class="img-fluid"></div>
+        <div class="col-8">
+            <span style="display: flex; justify-content: space-around;"><hr style="width:60%;text-align:left;margin-left:0"><h3 class="sobre">About me</h3></span>
+            <p>Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are  also reproduced in their exact original form, accompanied by English</p>  
+        </div>
+        
+        
+    </div>
+ 
+</div>
+
+ 
 </div>
 
 {% endblock %}
