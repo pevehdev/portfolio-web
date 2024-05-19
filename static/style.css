@@ -11,7 +11,7 @@
 }
 .navbar-background{
     background-color: rgb(10, 25, 47, 0.9) ;
-    display: block;
+    display: inline-block !important;
     -webkit-box-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
@@ -44,7 +44,7 @@
     -webkit-font-smoothing: antialiased;
     background-color: rgb(10, 25, 47);
     color: #8892b0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
    
     
     line-height: 1.3;
@@ -55,7 +55,7 @@
    
 /*** estilo do texto do navbar ***/
 .nav-texto1{
-font-size: 15px;
+font-size: 15px !important;
 Color: #CCD6f6 !important;
 letter-spacing: 0px;
 text-decoration: none;
@@ -63,7 +63,7 @@ text-decoration: none;
 .nav-texto1:hover{
 font-size: 15px;
 Color: #64ffda !important;
-letter-spacing: 0px;
+letter-spacing: 2px;
 text-decoration: none;   
 }
 
@@ -72,14 +72,29 @@ text-decoration: none;
 
 font-size: 15px;
 Color: #64ffda;
-letter-spacing: 0px;
+letter-spacing: -1px;
 text-decoration: none;
+word-spacing: 12px;
 
 }
 .texto2{
-font-size: 50px;
-Color: #CCD6f6;
-font-weight: bold;
+font-size: 70px !important;
+Color: white;
+font-weight: 900;
+letter-spacing: 0px;
+}
+.texto3{
+  letter-spacing: 0px;
+  font-weight: 900;
+  color: #8892b0;
+}
+.texto4{
+  font-size: 16px !important;
+  Color: #8892b0;
+  letter-spacing: -1px;
+  text-decoration: none;
+  word-spacing: 8px;
+
 }
 
 .nav-botao{
@@ -92,6 +107,8 @@ font-weight: bold;
     text-decoration: none;
 }
 
+
+
 .botao{
     color: #64ffda;
     background-color: transparent;
@@ -103,7 +120,7 @@ font-weight: bold;
     line-height: 1;
     text-decoration: none;
     transition: var(--transition);
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 style.css
@@ -152,4 +169,12 @@ body {
 /* Suavização da rolagem */
 html {
     scroll-behavior: smooth;
+}
+
+.circle-image img{
+  width: 300px; 
+  height:300px; 
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-right: 120px;
 }

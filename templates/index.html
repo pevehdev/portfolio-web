@@ -1,75 +1,40 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class="container text-start mt-5">
+<div class=" text-start mt-5">
     <div class="row">
-        <div class="col-md-6">
-            <p class="text-small poppins-regular texto1">Olá, meu nome é</p>
-            <h1>
-                <p class="text-large poppins-bold texto2">Paulo Victor.</p>
-            </h1>
-            <p class="text-medium texto3">Sou desenvolvedor de software focado em back-end (e ocasionalmente
-                desenvolvimento
-                aplicações web). Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL Relacional
-                e
-                Powerbi.</p>
-            <a href="#" class="btn btn-primary btn-custom botao">Confira meus projetos</a>
+        <div class="col-md-6 ">
+            <div>
+                <p class="text-small texto1">Olá, meu nome é</p>
+                <h1>
+                    <p class="text-large texto2">Paulo Victor.</p>
+                </h1>
+                <h1><p class=" text-large texto3">Desenvolvo aplicativos e estudo Análise de Dados.</p></h1>
+                <p class="text-medium texto4">Sou desenvolvedor de software focado em back-end (e ocasionalmente
+                    desenvolvimento
+                    aplicações web). Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL
+                    Relacional
+                    e
+                    Powerbi.
+                   </p>
+
+            </div>
+            <div>
+                <a href="#" class="btn btn-primary btn-custom botao">Confira meus projetos</a>
+            </div>
+            
         </div>
 
+
+        <!-- Bloco com imagem arredondada -->
+
+        <div class="col-md-6">
+            <div class="circle-image d-block text-center">
+                <img src="{{url_for('static',filename='Eu_3.png')}}" alt="Imagem"
+                    >
+            </div>
+        </div>
     </div>
 
 </div>
-<div class="container text-start mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <p class="text-small poppins-regular texto1">Olá, meu nome é</p>
-            <h1>
-                <p class="text-large poppins-bold texto2">Paulo Victor.</p>
-            </h1>
-            <p class="text-medium texto3">Sou desenvolvedor de software focado em back-end (e ocasionalmente
-                desenvolvimento
-                aplicações web). Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL Relacional
-                e
-                Powerbi.</p>
-            <a href="#" class="btn btn-primary btn-custom botao">Confira meus projetos</a>
-        </div>
 
-    </div>
-
-</div>
-<div class="container text-start mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <p class="text-small poppins-regular texto1">Olá, meu nome é</p>
-            <h1>
-                <p class="text-large poppins-bold texto2">Paulo Victor.</p>
-            </h1>
-            <p class="text-medium texto3">Sou desenvolvedor de software focado em back-end (e ocasionalmente
-                desenvolvimento
-                aplicações web). Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL Relacional
-                e
-                Powerbi.</p>
-            <a href="#" class="btn btn-primary btn-custom botao">Confira meus projetos</a>
-        </div>
-
-    </div>
-
-</div>
-<div class="container text-start mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <p class="text-small poppins-regular texto1">Olá, meu nome é</p>
-            <h1>
-                <p class="text-large poppins-bold texto2">Paulo Victor.</p>
-            </h1>
-            <p class="text-medium texto3">Sou desenvolvedor de software focado em back-end (e ocasionalmente
-                desenvolvimento
-                aplicações web). Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL Relacional
-                e
-                Powerbi.</p>
-            <a href="#" class="btn btn-primary btn-custom botao">Confira meus projetos</a>
-        </div>
-
-    </div>
-
-</div>
 {% endblock %}
