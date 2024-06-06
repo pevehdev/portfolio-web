@@ -19,6 +19,12 @@
     transition: top 0.3s !important;
   
 }
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .container {
     display: block;
     justify-content: center;
@@ -196,6 +202,7 @@ html {
   width: 100%;
   max-width: 400px;
   height: auto;
+  padding-top: 20px;
 }
 
 @keyframes bounce {
@@ -227,4 +234,11 @@ html {
 
 .bloco{
   margin-top: 200px !important;
+  height: 800px !important;
+}
+.vertical-line {
+  border-left: 2px solid rgba(173, 173, 182, 0.1);
+  height: 90%;
+  padding-top: 50px !important;
+  margin: 20px 20px;
 }
