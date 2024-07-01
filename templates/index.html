@@ -1,53 +1,128 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class=" container text-start mt-5 bloco">
-    <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4">
-            <div>
-                <p class="text-small texto1">Olá, meu nome é</p>
-                <h1>
-                    <p class="text-large texto2">Paulo Victor.</p>
-                </h1>
-                <h1>
-                    <p class="text-large texto3">Desenvolvo aplicativos e estudo Análise de Dados.</p>
-                </h1>
-                <p class="text-medium texto4">Sou desenvolvedor de software focado em back-end (e ocasionalmente
-                    desenvolvimento
-                    aplicações web). <br> Atualmente focado na área de Análise de Dados com Python, Banco de dados SQL
-                    Relacional
-                    e Powerbi.
-                </p>
+
+<!-- home section start-->
+<section class="home py-5" id="home">
+    <div class="container-lg">
+        <div class="row min-vh-100 align-items-center align-content-center">
+            <div class="col-md-6 mt-5 mt-md-0 ">
+                <div class="home-img text-center">
+                    <img src="{{url_for('static', filename='img/profile.png')}}" class="rounded-circle mw-100"
+                        alt="profile img">
+
+                </div>
             </div>
-            <div>
-                <a href="#" class="btn btn-primary btn-custom botao">Confira meus projetos</a>
+            <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                <div class="home-text">
+                    <p class="text-muted mb-1">Olá, sou</p>
+                    <h1 class="text-danger text-uppercase fs-1 fw-bold">Paulo Victor</h1>
+                    <h2 class="fs-4">Desenvolvedor Full Stack</h2>
+                    <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                        architecto
+                        pariatur itaque fuga nisi quas voluptas dolorum, voluptate perferendis optio quidem, assumenda
+                        impedit
+                        omnis, aut tempore amet deleniti. Voluptas, omnis?</p>
+                    <a href="#portfolio" class="btn btn-danger px-3 mt-3"> Meu Portfolio</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- home section end-->
+
+<!--About section start-->
+<section class="about py-5" id="about">
+    <div class="container-lg py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-tittle text-center">
+                    <h2 class="fw-bold mb-5">About Me</h2>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-text">
+                    <h3 class="fs-4 mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit</h3>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, dolore
+                        perferendis? Alias,
+                        mollitia atque cumque deserunt provident voluptatum temporibus illum repudiandae fugit harum
+                        facere deleniti dolores iusto soluta. In, accusantium?</p>
+                </div>
+                <div class="row text-center text-uppercase my-3">
+                    <div class="col-sm-4">
+                        <div class="fact-item">
+                            <h4 class="fs-1 fw-bold">100</h4>
+                            <p class="text-muted">Projects Completed</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="fact-item">
+                            <h4 class="fs-1 fw-bold">90</h4>
+                            <p class="text-muted">happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="fact-item">
+                            <h4 class="fs-1 fw-bold">95</h4>
+                            <p class="text-muted">Positive Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex align-items-center">
+                        <a href="#" class="btn px-3 btn-danger me-5">Download Curriculo </a>
+                        <div class="social-links">
+                            <a href="#" class="text-dark me-2"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-dark me-2"> <i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark me-2"> <i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark me-2"> <i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
 
-        <!-- Bloco com imagem arredondada -->
-        <!-- <div class="col-lg-6 col-md-12 text-center">
-            <div class="circle-image">
-                <img src="{{url_for('static',filename='Eu_3.png')}}" alt="Imagem" class="img-fluid rounded-circle">
+                </div>
             </div>
-        </div> -->
-    </div>
-</div>
 
-<div class=" container text-start mt-5 bloco">
-    <div class="row img-sobre">
-        <div class="col-4 "><img src="{{url_for('static',filename='Eu2.png')}}" alt="Imagem" class="img-fluid"></div>
-        <div class="col-6">
-            <span style="display: flex; justify-content: space-around;"><hr style="width:60%;text-align:left;margin-left:0"><h3 class="sobre">About me</span></h3>  </span>
-            <p>Sou um profissional apaixonado por tecnologia e inovação, com uma sólida formação acadêmica e vasta experiência prática em desenvolvimento de software e análise de dados. Formei-me em Ciência da Computação pelo Centro Universitário UniCarioca, onde desenvolvi uma base robusta em conceitos teóricos e práticos da computação. Complementando minha formação, realizei cursos intensivos no Senac RJ, onde aprofundei minhas habilidades em análise de dados e desenvolvimento full stack. </p> 
-            
+            <div class="col-md-6 mt-5 mt-md-0">
+                <div class="skill-item mb-4">
+                    <h3 class="fs-6">HTML</h3>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill-item mb-4">
+                    <h3 class="fs-6">CSS</h3>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill-item mb-4">
+                    <h3 class="fs-6">JAVASCRIPT</h3>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill-item mb-4">
+                    <h3 class="fs-6">BOOTSTRAP</h3>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-1"><div class="vertical-line"></div></div>
-       
-        
     </div>
- 
-</div>
 
- 
-</div>
+</section>
+<!--About section end-->
+
+<!--service section-->
+
+<!--service section end-->
 
 {% endblock %}
